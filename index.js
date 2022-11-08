@@ -29,7 +29,8 @@ function respuestaClic() {
 
     if((verificaUsuario == verificaPassword) && verificaPassword != ""  ){
             console.log("Usuario y contraseña CORRECTOS");
-            window.location.href = "../views/productos.html";
+            /* window.location.href = "../views/productos.html"; */
+            location.href = "views/productos.html"
             
             console.log(entrada);
     }else{
