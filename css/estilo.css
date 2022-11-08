@@ -1,0 +1,104 @@
+* {
+  font-family: 'Dosis', sans-serif;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-family: 'Mukta', sans-serif; }
+
+/*---------BARRA DE NAVEGACION---------*/
+.logo {
+  height: 80px;
+  width: 100%; }
+
+.navbar-collapse {
+  justify-content: flex-end;
+  padding: 20px; }
+
+li.nav-item {
+  padding: 15px; }
+
+.nav-link:hover {
+  transition: .5s;
+  transform: scale(1.1); }
+
+.nosotros-padding {
+  padding-top: 25px; }
+
+.button {
+  width: 125px;
+  color: #EFEFEF;
+  border: 0px;
+  font-size: 20px;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 5px;
+  transition: width 1s; }
+
+.button:hover {
+  background-color: #488FB1;
+  transition: .5s; }
+
+.service_it {
+  padding-top: 20px; }
+
+.tecladorojo {
+  padding-top: 20px; }
+
+.mapa_p {
+  padding-top: 20px; }
+
+/*-----------------------FORMULARIO----------------*/
+.formulariocolumna {
+  max-width: 510px;
+  margin: 0 auto;
+  text-align: left; }
+
+form {
+  width: 100%;
+  padding: 20px; }
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"] {
+  width: 100%;
+  margin: 10px 0;
+  border: 4px solid #EFEFEF;
+  border-radius: 3px;
+  background-color: #EFEFEF;
+  padding: 3px 10px; }
+
+form label {
+  width: 100%;
+  font-weight: inherit;
+  display: inline-block; }
+
+textarea {
+  width: 100%;
+  height: 220px;
+  margin: 2px 0;
+  border: 1px solid #EFEFEF;
+  background-color: #EFEFEF;
+  resize: none;
+  border-radius: 2px;
+  display: block;
+  padding: 3px 10px; }
+
+.cajabotonC {
+  display: flex;
+  justify-content: center; }
+
+.contactoT {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: white; }
+
+.box_form {
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 1px black; }
+
+.iconfoo {
+  padding-top: 20px; }
+
+.bTn {
+  border-color: black; }

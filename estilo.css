@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* .padre{
+    height: 300px;
+    width: 100%;
+    background-color: red;
+    
+    
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hijo{
+    background-color: blue;
+    height: 50px;
+    width: 120px;
+    
+    
+    
+    
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+} */
+
+
+
+.master{
+    background-color: gray;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.datos{
+    background-color: gainsboro;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.button{
+    width: 100px;
+    height: 35px;
+}
+
+.correo{
+    height: 35px;
+    width: 240px;
+}
+
+.password{
+    height: 35px;
+    width: 240px;
+}
+
+
+.footer{
+    background-color: greenyellow;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
