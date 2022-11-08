@@ -27,23 +27,23 @@ const productos = [producto1, producto2, producto3, producto4];
 
 //ASIGNA PRODUCTO AL CARRITO
 function capturar() {
-    carrito.push(productos[0])
-    alert("Producto agregado")
+    carrito.push(productos[0]);
+    alert("Producto agregado");
     console.log(carrito);
 }
 function capturar2() {
-    carrito.push(productos[1])
-    alert("Producto agregado")
+    carrito.push(productos[1]);
+    alert("Producto agregado");
     console.log(carrito);
 }
 function capturar3() {
-    carrito.push(productos[2])
-    alert("Producto agregado")
+    carrito.push(productos[2]);
+    alert("Producto agregado");
     console.log(carrito);
 }
 function capturar4() {
-    carrito.push(productos[3])
-    alert("Producto agregado")
+    carrito.push(productos[3]);
+    alert("Producto agregado");
     console.log(carrito);
 }
 
@@ -51,31 +51,35 @@ function capturar4() {
 //CARRITO VACIO
 carrito = [];
 
-
-
 function ejecutarCompra() {
-    const precioConIva = carrito.map((el) => {
-        return {
-            nombre: el.nombre,
-            precio: el.precio * 1.21
-        }
-    })
-
-
-    const totalSinIva = carrito.reduce((acc, el) => acc + el.precio, 0)
-    const totalConIva = precioConIva.reduce((acc, el) => acc + el.precio, 0)
-    console.log(`Costo total de la compra sin IVA $${totalSinIva}`);
-    console.log(`Costo total de la compra con IVA (21%) $${totalConIva}`);
     
+    let confirmacion = prompt(`Desea realizar la compra? \n escriba "1" para confirmar `);
+
+    if(confirmacion === "1"){
+        const precioConIva = carrito.map((el) => {
+            return {
+                nombre: el.nombre,
+                precio: el.precio * 1.21
+            }
+        })
+    
+        const totalSinIva = carrito.reduce((acc, el) => acc + el.precio, 0);
+        const totalConIva = precioConIva.reduce((acc, el) => acc + el.precio, 0);
+        console.log("Compra exitosa ");
+        carrito.forEach( (ticket)=> {
+            console.log(ticket);
+        });
+
+        console.log(`Costo total de la compra sin IVA $${totalSinIva}`);
+        console.log(`Costo total de la compra con IVA (21%) $${totalConIva}`);
+
+    }else{
+        console.log("Compra cancelada");
+    }
 }
 
-
-
 function borrarCompra() {
-
-
-    carrito.splice(0, carrito.length)
-
+    carrito.splice(0, carrito.length);
     console.log("Carrito borrado");
     console.log(carrito);
 } 
