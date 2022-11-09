@@ -1,10 +1,12 @@
 const comprar = document.getElementById("comprar");
 const borrarCarrito = document.getElementById("borrar");
+const filtrar = document.getElementById("filtrar");
 
 
 //aqui observar la palabra click va tal cual, si no, no funciona!
 comprar.addEventListener("click", ejecutarCompra);
 borrarCarrito.addEventListener("click", borrarCompra);
+filtrar.addEventListener("click", filtrarPrecio);
 
 
 //CONSTRUCTOR DE OBJETOS
@@ -51,6 +53,8 @@ function capturar4() {
 //CARRITO VACIO
 carrito = [];
 
+
+//FUNCION PARA REALIZAR LA COMPRA
 function ejecutarCompra() {
     
     let confirmacion = prompt(`Desea realizar la compra? \n escriba "1" para confirmar `);
@@ -83,3 +87,18 @@ function borrarCompra() {
     console.log("Carrito borrado");
     console.log(carrito);
 } 
+
+//FILTRADO SEGUN CAPITAL
+function filtrarPrecio(){
+    let precioMaximo = parseInt(prompt("Ingrese el monto disponible"));
+
+    const filtrado = productos.filter((el)=>el.precio <= precioMaximo);
+
+    if(filtrado == ""){
+        console.log("dinero insuficiente");
+    }else{
+        console.log("Puede comprar cualquiera de estos " + filtrado.length + " productos");
+    }
+
+    console.log(filtrado);
+}

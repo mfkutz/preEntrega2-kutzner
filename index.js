@@ -7,9 +7,6 @@ let fecha = document.getElementById("parrafo");
 
 fecha.innerHTML = new Date();
 
-console.log(footer.innerHTML);
-console.log(parrafo.innerHTML);
-
 
 //USUARIOS REGISTRADOS
 const usuarios = [
